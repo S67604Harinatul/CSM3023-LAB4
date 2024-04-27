@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="processCustomer.jsp" method="post">
+        <h1>Use JSP Scriplet and JSP Expression in application</h1>
+        <h3 style="color: purple;">Customer discount</h3>
+        <label for="CustomerCode">Customer Code</label>
+                <input type="text" id="CustomerCode" name="CustomerCode" placeholder="Key-in customer code"><br>        
+        <label for="Quantity">Quantity</label>
+                <input type="number" id="Quantity" name="Quantity" placeholder="key-in quantity"><br>
+        <label for="CustomerType">Customer Type</label>
+                    <input type="radio" id="NormalCustomer" name="CustomerType" value="1">
+                        <label for="NormalCustomer">Normal Customer</label>
+                    <input type="radio" id="PrivilegeCustomer" name="CustomerType" value="2">
+                        <label for="PrivilegeCustomer">Privilege Customer</label>
+                <br>
+                
+                <p><input type="submit" id="btnSubmit" value="Submit" />
+                    <input type="reset" id="btnCancel" value="Cancel"/>
+                </p> 
+        </form>
+    </body>
+</html>
